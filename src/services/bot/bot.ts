@@ -50,7 +50,7 @@ export class BotService implements IBotService {
       if (!tag) {
         return await ctx.reply('Ты не указал поле "Тег" в обращении.');
       }
-      const validTagRegex = /^\s?(тег:?\s?)?\#?[a-zA-Z0-9]+$/;
+      const validTagRegex = /^\s?(тег:?\s?)?\#[a-zA-Z0-9]+$/;
       if (!validTagRegex.test(tag.toLowerCase())) {
         return await ctx.reply("Указан неверный тег. Проверь ещё раз.");
       }

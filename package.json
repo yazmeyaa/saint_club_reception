@@ -1,0 +1,25 @@
+{
+  "name": "saint_club_reception",
+  "version": "0.0.1",
+  "description": "Saint club reception bot.",
+  "scripts": {
+    "start": "node build/index.js",
+    "build": "tsc",
+    "dev": "nodemon src/index.ts"
+  },
+  "main": "./build/index.js",
+  "repository": "https://github.com/yazmeyaa/saint_club_reception",
+  "author": "[yazmeyaa](evgenijantonenkov456@gmail.com)",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}

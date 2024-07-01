@@ -59,7 +59,7 @@ export class BotService implements IBotService {
 
       const infoMsg = `ID: ${ctx.from.id}\n${
         ctx.from.username
-          ? `Username: ${normalizeString(ctx.from.username)}`
+          ? `Username: @${normalizeString(ctx.from.username)}`
           : ""
       }\n[Ссылка на пользователя](tg://user?id=${ctx.from.id})\n`;
 
